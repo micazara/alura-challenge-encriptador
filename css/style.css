@@ -1,0 +1,11 @@
+body{
+    background-color: #ffe5ec;
+}
+#texto::placeholder{
+    color: #FF006E;
+}
+
+#texto:focus{
+    color: #FF006E;
+}
+
