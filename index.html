@@ -5,34 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alura - Encriptador</title>
-    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/alt.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <main>
-        <nav>
-            <img src="img/logo.svg" alt="logotipo de alura">
-        </nav>
-        <section>
-            <form action="post">
-                <label for="texto"></label>
-                <textarea name="texto" id="texto" placeholder="Ingrese su texto aqui"></textarea>
-            </form>
-        </section>
-        <section class="error">
-            <img src="img/munieco.svg" alt="">
-            <h3>Ningún mensaje fue encontrado</h3>
-            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
-        </section>
-        <div class="texto-encriptado-contenedor">
-            <div class="texto-encriptado"></div>
-            <a href="">Copiar</a>
+        <img src="img/logo.svg" alt="logotipo de alura" class="logo">
+        <div class="contenedor">
+            <div class="panel-izq">
+                <section>
+                    <form action="post">
+                        <label for="texto"></label>
+                        <textarea name="texto" id="texto" placeholder="Ingrese su texto aqui"></textarea>
+                    </form>
+                </section>
+                <section>
+                    <p>Solo letras minúsculas y sin acentos</p>
+                    <section class="botones">
+                        <button class="boton-rosa">Encriptar</button>
+                        <button class="boton-blanco">Desencriptar</button>
+                    </section>
+                </section>
+            </div>
+            <div class="panel-derecho">
+                <img src="img/munieco.svg" alt="">
+                <h3>Ningún mensaje fue encontrado</h3>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                <div class="texto-encriptado-contenedor">
+                    <textarea name="texto-encriptado" id="texto-encriptado"></textarea>
+                    <button href="" class="boton-blanco boton-copiar">Copiar</button>
+                </div>
+            </div>
         </div>
-        <p>Solo letras minúsculas y sin acentos</p>
-        <section>
-            <a href="">Encriptar</a>
-            <a href="">Desencriptar</a>
-        </section>
     </main>
     <footer>
         <p>Micaela Zara - 2024</p>
