@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alura - Encriptador</title>
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
     <link rel="stylesheet" href="css/alt.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,17 +13,15 @@
 
 <body>
     <main>
-        <img src="img/logo.svg" alt="logotipo de alura" class="logo">
+        <img class="img-logo" src="img/logo.svg" alt="logotipo de alura" class="logo">
         <div class="contenedor">
             <div class="panel-izq">
-                <section>
-                    <form action="post">
-                        <label for="texto"></label>
-                        <textarea name="texto" id="texto" placeholder="Ingrese su texto aqui"></textarea>
-                    </form>
+                <section class="panel-izq-superior">
+                    <textarea name="texto" id="texto" placeholder="Ingrese su texto aqui" cols="75" rows="6"></textarea>
                 </section>
-                <section>
-                    <p>Solo letras minúsculas y sin acentos</p>
+                <section class="panel-izq-inferior">
+                    <p class="aviso"><img src="img/exclamation.svg" alt="Icono de exclamación">Solo letras minúsculas y
+                        sin acentos</p>
                     <section class="botones">
                         <button class="boton-rosa">Encriptar</button>
                         <button class="boton-blanco">Desencriptar</button>
@@ -32,11 +29,11 @@
                 </section>
             </div>
             <div class="panel-derecho">
-                <img src="img/munieco.svg" alt="">
+                <img class="img-munieco" src="img/munieco.svg" alt="">
                 <h3>Ningún mensaje fue encontrado</h3>
                 <p>Ingresa el texto que desees encriptar o desencriptar.</p>
-                <div class="texto-encriptado-contenedor">
-                    <textarea name="texto-encriptado" id="texto-encriptado"></textarea>
+                <div class="texto-resultado-contenedor">
+                    <textarea name="texto-resultado" id="texto-resultado" rows="10" cols="20"></textarea>
                     <button href="" class="boton-blanco boton-copiar">Copiar</button>
                 </div>
             </div>

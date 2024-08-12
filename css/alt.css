@@ -1,0 +1,167 @@
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    background-color: #FFC2D1;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+main {
+    padding: 40px;
+}
+
+/* .img-logo{
+    padding: 40px;
+} */
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+textarea {
+    border: none;
+    outline: none;
+    resize: none;
+    background: none;
+    color: #FF006E;
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+}
+
+textarea::placeholder{
+    color: #FF006E;
+}
+
+.panel-izq {
+    display: flex;
+    flex-direction: column;
+    width: 680px;
+    gap: 200px;
+}
+
+.aviso{
+    color: #495057;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.panel-derecho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 400px;
+    height: 600px;
+    box-sizing: border-box;
+    justify-content: center;
+    padding: 32px;
+    text-align: center;
+    box-shadow: 10px 10px 23px -26px rgba(0, 0, 0, 0.75);
+    border-radius: 32px;
+}
+
+button {
+    background: none;
+    /* Elimina el color de fondo */
+    border: none;
+    /* Elimina el borde */
+    padding: 0;
+    /* Elimina el padding */
+    margin: 0;
+    /* Elimina el margen */
+    outline: none;
+    /* Elimina el contorno al hacer clic */
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    gap: 24px
+}
+
+.boton-rosa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+    background-color: #FF006E;
+    text-decoration: none;
+    width: 328px;
+    color: #FFFFFF;
+    height: 67px;
+    font-size: 16px;
+    transition: transform 250ms;
+}
+
+.boton-rosa:hover {
+    transform: translateY(-10px);
+}
+
+
+.boton-blanco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+    border: 1px solid #FF006E;
+    text-decoration: none;
+    width: 328px;
+    color: #FF006E;
+    height: 67px;
+    font-size: 16px;
+    transition: transform 250ms;
+}
+
+.boton-blanco:hover {
+    transform: translateY(-10px);
+}
+
+.boton-copiar {
+    display: none;
+}
+
+.img-munieco {
+    /* width: 200px; Ajusta el tamaño de la imagen */
+    animation: flotar 3s ease-in-out infinite;
+}
+
+@keyframes flotar {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+        /* Ajusta la altura del flotado */
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.texto-resultado-contenedor{
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 192px;
+
+}
+
+#texto-resultado{
+    color: #495057;
+    font-size: 24px;
+}
+
+footer{
+    background-color: #FF006E;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
