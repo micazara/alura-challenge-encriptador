@@ -11,9 +11,9 @@ main {
     padding: 40px;
 }
 
-/* .img-logo{
-    padding: 40px;
-} */
+.img-logo{
+    width:10%;
+}
 
 .contenedor {
     display: flex;
@@ -30,10 +30,10 @@ textarea {
     background: none;
     color: #FF006E;
     font-family: 'Inter', sans-serif;
-    font-size: 32px;
+    font-size: 2rem;
 }
 
-textarea::placeholder{
+textarea::placeholder {
     color: #FF006E;
 }
 
@@ -44,7 +44,7 @@ textarea::placeholder{
     gap: 200px;
 }
 
-.aviso{
+.aviso {
     color: #495057;
     display: flex;
     gap: 8px;
@@ -95,7 +95,7 @@ button {
     width: 328px;
     color: #FFFFFF;
     height: 67px;
-    font-size: 16px;
+    font-size: 1rem;
     transition: transform 250ms;
 }
 
@@ -114,7 +114,7 @@ button {
     width: 328px;
     color: #FF006E;
     height: 67px;
-    font-size: 16px;
+    font-size: 1rem;
     transition: transform 250ms;
 }
 
@@ -146,7 +146,7 @@ button {
     }
 }
 
-.texto-resultado-contenedor{
+.texto-resultado-contenedor {
     display: none;
     flex-direction: column;
     justify-content: space-around;
@@ -154,14 +154,63 @@ button {
 
 }
 
-#texto-resultado{
+#texto-resultado {
     color: #FB6F92;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
-footer{
+footer {
     background-color: #FF006E;
     padding: 10px;
     text-align: center;
     color: white;
 }
+
+/* MEDIA QUERIES */
+
+/* tablets */
+@media(max-width: 800px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .img-logo{
+        padding-bottom: 7.2rem;
+        width: 7%;
+    }
+
+    .contenedor{
+        flex-direction: column;
+    }
+
+    .panel-derecho{
+        width: 43rem;
+        height: 8rem;
+        box-shadow: 10px 10px 23px -26px rgba(0, 0, 0, 0.75);
+    }
+
+    .img-munieco{
+        display: none;
+    }
+
+    .texto-resultado-contenedor{
+        height: 50rem;
+        width: 39rem;
+    }
+
+    #texto-resultado{
+        width: 39rem;
+        height: 11rem;
+    }
+
+    #copiar{
+        height: 4rem;
+        width: 39rem;
+    }
+}
+
+/* celus */
+@media(max-width: 480px) {}
