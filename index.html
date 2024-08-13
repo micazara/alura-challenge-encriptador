@@ -23,18 +23,18 @@
                     <p class="aviso"><img src="img/exclamation.svg" alt="Icono de exclamación">Solo letras minúsculas y
                         sin acentos</p>
                     <section class="botones">
-                        <button class="boton-rosa">Encriptar</button>
-                        <button class="boton-blanco">Desencriptar</button>
+                        <button onclick="botonEncriptar()" class="boton-rosa">Encriptar</button>
+                        <button onclick="botonDesencriptar()" class="boton-blanco">Desencriptar</button>
                     </section>
                 </section>
             </div>
             <div class="panel-derecho">
                 <img class="img-munieco" src="img/munieco.svg" alt="">
                 <h3>Ningún mensaje fue encontrado</h3>
-                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                <p class="mensaje-inicio">Ingresa el texto que desees encriptar o desencriptar.</p>
                 <div class="texto-resultado-contenedor">
                     <textarea name="texto-resultado" id="texto-resultado" rows="10" cols="20"></textarea>
-                    <button href="" class="boton-blanco boton-copiar">Copiar</button>
+                    <button href="" class="boton-blanco boton-copiar" id="copiar">Copiar</button>
                 </div>
             </div>
         </div>
@@ -42,6 +42,7 @@
     <footer>
         <p>Micaela Zara - 2024</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
