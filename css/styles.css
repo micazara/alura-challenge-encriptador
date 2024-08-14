@@ -11,8 +11,8 @@ main {
     padding: 40px;
 }
 
-.img-logo{
-    width:10%;
+.img-logo {
+    width: 8%;
 }
 
 .contenedor {
@@ -169,48 +169,183 @@ footer {
 /* MEDIA QUERIES */
 
 /* tablets */
-@media(max-width: 800px) {
+/* @media(min-width: 481px) and (max-width: 800px) {
     main {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         justify-content: center;
     }
 
-    .img-logo{
+    .img-logo {
         padding-bottom: 7.2rem;
         width: 7%;
+        align-self: flex-start;
+        padding-left: 17px;
     }
 
-    .contenedor{
+    .contenedor {
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
-    .panel-derecho{
+    .botones{
+        gap: 1.5rem;
+    }
+
+    .boton-rosa, .boton-blanco{
+        width: 20rem;
+        height: 4rem;
+    }
+
+    .panel-derecho {
         width: 43rem;
-        height: 8rem;
+        height: 21rem;
         box-shadow: 10px 10px 23px -26px rgba(0, 0, 0, 0.75);
     }
 
-    .img-munieco{
+    .img-munieco {
         display: none;
     }
 
-    .texto-resultado-contenedor{
-        height: 50rem;
+    .texto-resultado-contenedor {
+        height: 17rem;
         width: 39rem;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
     }
 
-    #texto-resultado{
+    #texto-resultado {
         width: 39rem;
         height: 11rem;
+        padding: 0;
     }
 
-    #copiar{
+    #copiar {
         height: 4rem;
         width: 39rem;
     }
+} */
+
+/* MEDIA QUERIES */
+
+/* tablets */
+/* MEDIA QUERIES */
+
+/* tablets */
+@media(min-width: 481px) and (max-width: 800px) {
+    main {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img-logo {
+        width: 10%;
+        align-self: flex-start;
+        padding-left: 17px;
+    }
+
+    .contenedor {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .panel-izq {
+        width: 90%;
+        gap: 20px;
+    }
+
+    #texto {
+        width: 100%;
+        height: 150px;
+        font-size: 1.5rem;
+    }
+
+    .botones {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 16px;
+        width: 100%;
+    }
+
+    .boton-rosa,
+    .boton-blanco {
+        width: 48%;
+        height: 56px;
+        font-size: 1rem;
+        border-radius: 12px;
+    }
+
+    .aviso {
+        margin-top: 10px;
+        font-size: 0.9rem;
+    }
+
+    .panel-derecho {
+        width: 90%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 12px;
+        padding: 24px;
+        margin-top: 20px;
+    }
+
+    .img-munieco {
+        display: none;
+    }
+
+    h3 {
+        margin-bottom: 16px;
+        font-size: 1.2rem;
+    }
+
+    .mensaje-inicio {
+        font-size: 1rem;
+        color: #6c757d;
+        margin-bottom: 16px;
+    }
+
+    .texto-resultado-contenedor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 16px;
+    }
+
+    #texto-resultado {
+        width: 100%;
+        height: 100px;
+        padding: 16px;
+        font-size: 1rem;
+    }
+
+    #copiar {
+        width: 100%;
+        height: 48px;
+        font-size: 1rem;
+        border-radius: 12px;
+        border: 1px solid #FF006E;
+    }
+
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        margin-top: 20px;
+        font-size: 0.9rem;
+    }
 }
+
+
 
 /* celus */
 @media(max-width: 480px) {}
