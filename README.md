@@ -8,5 +8,4 @@ Utiliza:
 - JavaScript
   - Clipboard API
 
-[Visita el sitio aquí](https://micazara.github.io/alura-challenge-encriptador)
 
