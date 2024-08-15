@@ -348,5 +348,129 @@ footer {
     }
 }
 
+/* celus */
+@media(max-width: 480px) {
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 16px;
+    }
+
+    .img-logo {
+        width: 20%;
+        align-self: flex-start;
+        padding-left: 6px;
+    }
+
+    .contenedor {
+        width: 100%;
+        flex-direction: column;
+        gap: 64px;
+    }
+
+    .panel-izq {
+        width: 100%;
+        gap: 20px;
+    }
+
+    .panel-izq,
+    .panel-derecho {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .panel-izq-superior {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #texto {
+        width: 100%;
+        padding: 8px;
+        font-size: 2rem;
+        box-sizing: border-box;
+    }
+
+    .panel-izq-inferior {
+        width: 90%;
+    }
+
+    .aviso {
+        font-size: 0.7rem;
+    }
+
+    .botones {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .boton-blanco,
+    .boton-rosa {
+        width: 100%;
+    }
+
+    .panel-derecho {
+        width: 90%;
+        height: 7%;
+    }
+
+    .img-munieco {
+        display: none;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    .mensaje-inicio {
+        font-size: 1rem;
+    }
 
 
+    .botones {
+        flex-direction: column;
+    }
+
+    .boton-blanco,
+    .boton-rosa {
+        border-radius: 24px;
+        font-size: 1rem;
+    }
+
+    .texto-resultado-contenedor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 16px;
+    }
+
+    #texto-resultado {
+        width: 100%;
+        height: 100px;
+        padding: 16px;
+        font-size: 1.5rem;
+    }
+
+    #copiar {
+        width: 100%;
+        height: 48px;
+        font-size: 1rem;
+        border-radius: 24px;
+        border: 1px solid #FF006E;
+    }
+
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        margin-top: 60px;
+        font-size: 0.9rem;
+    }
+}
