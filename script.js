@@ -58,3 +58,18 @@ function desencriptar(textoADesencriptar) {
     }
     return textoADesencriptar;
 }
+
+function botonCopiar() {
+    // Seleccionar el elemento textarea
+    let textoACopiar = document.getElementById("texto-resultado");
+
+    // Seleccionar el texto dentro del textarea
+    textoACopiar.select();
+    textoACopiar.setSelectionRange(0, 99999); // Para dispositivos móviles
+
+    // Copiar el texto al portapapeles
+    navigator.clipboard.writeText(textoACopiar.value)
+        .then(() => {
+            alert("Texto copiado con éxito");
+        })
+}
