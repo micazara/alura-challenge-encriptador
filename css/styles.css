@@ -235,7 +235,7 @@ footer {
 /* MEDIA QUERIES */
 
 /* tablets */
-@media(min-width: 481px) and (max-width: 800px) {
+@media(min-width: 481px) and (max-width: 1199px) {
     main {
         padding: 20px;
         display: flex;
@@ -247,7 +247,8 @@ footer {
     .img-logo {
         width: 10%;
         align-self: flex-start;
-        padding-left: 17px;
+        padding-left: 32px;
+        padding-bottom: 116px;
     }
 
     .contenedor {
@@ -255,6 +256,7 @@ footer {
         align-items: center;
         justify-content: center;
         width: 100%;
+        gap: 64px;
     }
 
     .panel-izq {
@@ -295,6 +297,7 @@ footer {
         border-radius: 12px;
         padding: 24px;
         margin-top: 20px;
+        height: 10%;
     }
 
     .img-munieco {
@@ -347,5 +350,3 @@ footer {
 
 
 
-/* celus */
-@media(max-width: 480px) {}
